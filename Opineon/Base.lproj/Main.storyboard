@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="s4p-hw-S9c">
+    <device id="retina6_12" orientation="portrait" appearance="dark"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Launch View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="LaunchViewController" customModule="Opineon" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kGj-wc-Y3k">
+                                <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="app-logo" translatesAutoresizingMaskIntoConstraints="NO" id="GfA-m2-xMr">
+                                        <rect key="frame" x="125" y="402" width="143" height="48"/>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your opinion matters!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Y1-8E-6Ng">
+                                        <rect key="frame" x="128.66666666666669" y="767.66666666666663" width="135.66666666666669" height="18.333333333333371"/>
+                                        <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="14"/>
+                                        <color key="textColor" name="splash-subtitle-color"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" name="Background"/>
+                                <constraints>
+                                    <constraint firstItem="GfA-m2-xMr" firstAttribute="centerY" secondItem="kGj-wc-Y3k" secondAttribute="centerY" id="KXR-gG-anE"/>
+                                    <constraint firstItem="GfA-m2-xMr" firstAttribute="centerX" secondItem="kGj-wc-Y3k" secondAttribute="centerX" id="Ssy-89-qwh"/>
+                                    <constraint firstItem="4Y1-8E-6Ng" firstAttribute="centerX" secondItem="kGj-wc-Y3k" secondAttribute="centerX" id="Zmi-a5-198"/>
+                                    <constraint firstAttribute="bottom" secondItem="4Y1-8E-6Ng" secondAttribute="bottom" constant="66" id="hW7-FD-9Z9"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="kGj-wc-Y3k" secondAttribute="bottom" id="FkT-SM-SEm"/>
+                            <constraint firstItem="kGj-wc-Y3k" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="QZZ-Es-DH0"/>
+                            <constraint firstItem="kGj-wc-Y3k" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="WGV-aO-Fw2"/>
+                            <constraint firstItem="kGj-wc-Y3k" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="gnM-i8-4ch"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="Pkp-5w-jGW"/>
+                    <connections>
+                        <segue destination="Okj-kw-Eyj" kind="show" identifier="AuthSegue" id="xYf-Ba-XB0"/>
+                        <segue destination="njQ-wA-Ed0" kind="show" id="yni-RX-E1j"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1000.763358778626" y="-2.1126760563380285"/>
+        </scene>
+        <!--HomeViewController-->
+        <scene sceneID="JcR-uD-0ll">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Home" referencedIdentifier="HomeViewController" id="njQ-wA-Ed0" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="xPd-Se-P96"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ayl-gD-W0H" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1804" y="127"/>
+        </scene>
+        <!--PhoneAuthViewController-->
+        <scene sceneID="ooJ-CP-cD1">
+            <objects>
+                <viewControllerPlaceholder storyboardIdentifier="Auth" storyboardName="Auth" referencedIdentifier="PhoneAuthViewController" id="Okj-kw-Eyj" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rNn-48-X3o" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1682" y="-292"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="AAa-GE-iVK">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="s4p-hw-S9c" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="TqF-Zy-Us6">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="z5l-Wp-OqZ"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eDB-x5-euv" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="74.045801526717554" y="-2.1126760563380285"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="app-logo" width="143" height="48"/>
+        <namedColor name="Background">
+            <color red="0.98400002717971802" green="0.98400002717971802" blue="0.98400002717971802" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+        </namedColor>
+        <namedColor name="splash-subtitle-color">
+            <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
